@@ -13,7 +13,7 @@ public class ExtentReportListener implements ITestListener
 {
 	//Report Constants  Declarations
 	private static final String FILE_NAME = "AutomationReport.html";
-	private static final String DOCUMENT_TITLE="Currency Converter API Automation";
+	private static final String DOCUMENT_TITLE="Jira API Automation";
 	private static final String REPORT_PATH=System.getProperty("user.dir")+"/TestAutomationReport/";
 	
 	//Extent Report Declarations
@@ -30,7 +30,7 @@ public class ExtentReportListener implements ITestListener
     	sparkReporter.config().setTheme(com.aventstack.extentreports.reporter.configuration.Theme.DARK);
     	extent = new ExtentReports();
     	extent.attachReporter(sparkReporter);
-    	extent.setSystemInfo("Application Name","Currency Converter API");
+    	extent.setSystemInfo("Application Name","Jira API");
     	extent.setSystemInfo("Platform",System.getProperty("os.name"));
     	extent.setSystemInfo("Environment","QA");
  

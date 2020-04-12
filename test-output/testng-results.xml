@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Jira API Test Suite" duration-ms="5989" started-at="2020-04-12T13:34:40Z" finished-at="2020-04-12T13:34:46Z">
+    <groups>
+    </groups>
+    <test name="Jira API Testcases" duration-ms="5989" started-at="2020-04-12T13:34:40Z" finished-at="2020-04-12T13:34:46Z">
+      <class name="com.jira.tests.GetIssueDetails">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.GetIssueDetails@159f197]" name="setUp" is-config="true" duration-ms="4" started-at="2020-04-12T19:04:46Z" finished-at="2020-04-12T19:04:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyGetIssue()[pri:0, instance:com.jira.tests.GetIssueDetails@159f197]" name="verifyGetIssue" duration-ms="276" started-at="2020-04-12T19:04:46Z" finished-at="2020-04-12T19:04:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetIssue -->
+      </class> <!-- com.jira.tests.GetIssueDetails -->
+      <class name="com.jira.tests.CreateIssue">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.CreateIssue@3c9d0b9d]" name="setUp" is-config="true" duration-ms="1053" started-at="2020-04-12T19:04:40Z" finished-at="2020-04-12T19:04:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCreateIssueTest()[pri:0, instance:com.jira.tests.CreateIssue@3c9d0b9d]" name="verifyCreateIssueTest" duration-ms="4590" started-at="2020-04-12T19:04:41Z" finished-at="2020-04-12T19:04:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateIssueTest -->
+      </class> <!-- com.jira.tests.CreateIssue -->
+    </test> <!-- Jira API Testcases -->
+  </suite> <!-- Jira API Test Suite -->
+</testng-results>

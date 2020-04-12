@@ -1,0 +1,8 @@
+[INFO ] 2020-04-12 18:58:10.668 [main] GetIssueDetails - Executing Get Issue Details API Request
+[INFO ] 2020-04-12 19:04:42.476 [main] CreateIssue - Executing Create Issue API Request
+[INFO ] 2020-04-12 19:04:46.498 [main] CreateIssue - Issue Create Successfully
+[INFO ] 2020-04-12 19:04:46.498 [main] CreateIssue - Issue Id :10315
+[INFO ] 2020-04-12 19:04:46.498 [main] CreateIssue - Issue Id :RES-19
+[INFO ] 2020-04-12 19:04:46.498 [main] CreateIssue - Issue Id :http://localhost:8086/rest/api/2/issue/10315
+[INFO ] 2020-04-12 19:04:46.543 [main] GetIssueDetails - Executing Get Issue Details API Request
+[INFO ] 2020-04-12 19:04:46.814 [main] GetIssueDetails - Issue Details fetched Successfully
