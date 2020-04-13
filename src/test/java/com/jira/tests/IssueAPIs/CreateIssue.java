@@ -1,4 +1,4 @@
-package com.jira.tests;
+package com.jira.tests.IssueAPIs;
 
 import org.apache.logging.log4j.LogManager;
 import org.testng.Assert;
@@ -23,7 +23,7 @@ public class CreateIssue extends BaseTest
 	//Issue constants.This will be used in further api request
 	static String issueId;
 	static String issueKey;
-	static String summary="Res-Project Issue 20";
+	static String summary="Rest Assured Issue 20";
 	static String description="This is a bug and issue number is 20";
     static String issueLink;
   @Test
@@ -54,17 +54,15 @@ public class CreateIssue extends BaseTest
 	 //Sending the api request
 response=
          given()
-				.spec(reqSpec)
-				.log().all()
+				.spec(requestSpec)
 				.header("Content-Type","application/json")
 				.body(cr)
 		.when()
 	       		.post(endpoint)
 	    .then()
-	    		.spec(resp)
+	    		.spec(responseSpec)
 	    		.statusCode(APIConstants.CREATED_RESPONSE_CODE)
 	    		.statusLine(APIConstants.CREATED_STATUS_LINE)
-	    		.log().all()
 	    		.extract().asString();
     
      //Converting the response object using JsonPath

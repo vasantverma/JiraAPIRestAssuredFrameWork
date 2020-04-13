@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 
@@ -16,14 +15,15 @@ import com.jira.util.APIConstants;
 import io.restassured.authentication.PreemptiveBasicAuthScheme;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.LogDetail;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 public class BaseTest 
 {
 	//Variable declaration
-	public RequestSpecification reqSpec;
-	public ResponseSpecification resp;
+	public RequestSpecification requestSpec;
+	public ResponseSpecification responseSpec;
     public Properties prop;
     public Logger logger;
     
@@ -68,8 +68,9 @@ public class BaseTest
     	 if(authMode.contains("cookie based"))
     	 {
     		 //Initializing the RequestSpecBuilder with common values for all api requests.
-     		reqSpec=new RequestSpecBuilder()
+    		 requestSpec=new RequestSpecBuilder()
      		.setBaseUri(prop.getProperty("baseURI"))
+     		.log(LogDetail.ALL)
      		.build();	 
     	 }
     	 else if(authMode.contains("basic"))
@@ -80,9 +81,11 @@ public class BaseTest
     		 authScheme.setPassword(prop.getProperty("password"));
     		 
     		 //Initializing the RequestSpecBuilder with common values for all api requests.
-    		reqSpec=new RequestSpecBuilder()
+    		 requestSpec=new RequestSpecBuilder()
     		.setBaseUri(prop.getProperty("baseURI"))
-    		.setAuth(authScheme).build();
+    		.setAuth(authScheme)
+    		.log(LogDetail.ALL)
+    		.build();
     		
     	 }
     	 else if(authMode.contains("oauth "))
@@ -105,12 +108,12 @@ public class BaseTest
     	 //Adding response headers using Map interface
     	 Map<String,Object> expectedHeaders=new HashMap<String,Object>();
     	 expectedHeaders.put("Cache-Control", "no-cache, no-store, no-transform");
-    	 expectedHeaders.put("Content-Encoding", "gzip");
     	 expectedHeaders.put("Content-Type", "application/json;charset=UTF-8");
     	 
     	//Initializing the ResponseSpecBuilder with common values for all api responses.
-    	 resp=new ResponseSpecBuilder()
+    	 responseSpec=new ResponseSpecBuilder()
     	.expectHeaders(expectedHeaders)
+    	.log(LogDetail.ALL)
     	.build();
     	 
     	

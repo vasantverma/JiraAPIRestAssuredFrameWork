@@ -13,6 +13,9 @@
 		<classes>
 			<class name="com.jira.tests.CreateIssue"></class>
 			<class name="com.jira.tests.GetIssueDetails"></class>
+			<class name="com.jira.tests.EditIssue"></class>
+			<class name="com.jira.tests.DeleteIssue"></class>
+			
 		</classes>
 	</test>
 

@@ -1,4 +1,4 @@
-package com.jira.tests;
+package com.jira.tests.IssueAPIs;
 
 import org.apache.logging.log4j.LogManager;
 import org.testng.Assert;
@@ -29,17 +29,15 @@ public class GetIssueDetails extends BaseTest
 	  
 		 //Sending the api request  
 	response=   given()
-			           .spec(reqSpec)
+			           .spec(requestSpec)
 			           .pathParam("IssueKey",CreateIssue.issueKey)
 			           .queryParam("fields", "summary,description,comment")
-			           .log().all()
 			    .when()
 			           .get(endpoint)
 			    .then()
-			           .spec(resp)
+			           .spec(responseSpec)
 			           .statusCode(APIConstants.SUCCESS_RESPONSE_CODE)
 			           .statusLine(APIConstants.SUCCESS_STATUS_LINE)
-			           .log().all()
 			           .extract().asString();
 	
 	  //Converting the response object using JsonPath

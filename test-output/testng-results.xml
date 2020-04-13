@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Jira API Test Suite" duration-ms="5989" started-at="2020-04-12T13:34:40Z" finished-at="2020-04-12T13:34:46Z">
+  <suite name="Default suite" duration-ms="3813" started-at="2020-04-13T15:27:17Z" finished-at="2020-04-13T15:27:21Z">
     <groups>
     </groups>
-    <test name="Jira API Testcases" duration-ms="5989" started-at="2020-04-12T13:34:40Z" finished-at="2020-04-12T13:34:46Z">
-      <class name="com.jira.tests.GetIssueDetails">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.GetIssueDetails@159f197]" name="setUp" is-config="true" duration-ms="4" started-at="2020-04-12T19:04:46Z" finished-at="2020-04-12T19:04:46Z">
+    <test name="Default test" duration-ms="3813" started-at="2020-04-13T15:27:17Z" finished-at="2020-04-13T15:27:21Z">
+      <class name="com.jira.tests.IssueAPIs.DeleteIssue">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.IssueAPIs.DeleteIssue@1188e820]" name="setUp" is-config="true" duration-ms="1025" started-at="2020-04-13T20:57:17Z" finished-at="2020-04-13T20:57:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyGetIssue()[pri:0, instance:com.jira.tests.GetIssueDetails@159f197]" name="verifyGetIssue" duration-ms="276" started-at="2020-04-12T19:04:46Z" finished-at="2020-04-12T19:04:46Z">
+        <test-method status="PASS" signature="verifyDeleteIssueTest()[pri:0, instance:com.jira.tests.IssueAPIs.DeleteIssue@1188e820]" name="verifyDeleteIssueTest" duration-ms="2714" started-at="2020-04-13T20:57:18Z" finished-at="2020-04-13T20:57:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGetIssue -->
-      </class> <!-- com.jira.tests.GetIssueDetails -->
-      <class name="com.jira.tests.CreateIssue">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.CreateIssue@3c9d0b9d]" name="setUp" is-config="true" duration-ms="1053" started-at="2020-04-12T19:04:40Z" finished-at="2020-04-12T19:04:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyCreateIssueTest()[pri:0, instance:com.jira.tests.CreateIssue@3c9d0b9d]" name="verifyCreateIssueTest" duration-ms="4590" started-at="2020-04-12T19:04:41Z" finished-at="2020-04-12T19:04:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCreateIssueTest -->
-      </class> <!-- com.jira.tests.CreateIssue -->
-    </test> <!-- Jira API Testcases -->
-  </suite> <!-- Jira API Test Suite -->
+        </test-method> <!-- verifyDeleteIssueTest -->
+      </class> <!-- com.jira.tests.IssueAPIs.DeleteIssue -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

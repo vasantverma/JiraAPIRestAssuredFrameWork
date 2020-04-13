@@ -8,6 +8,8 @@ public class APIConstants
     //API Response constants
     public static int CREATED_RESPONSE_CODE=201;
     public static String CREATED_STATUS_LINE="HTTP/1.1 201 ";
+    public static int UPDATE_RESPONSE_CODE=204;
+    public static String UPDATED_STATUS_LINE="HTTP/1.1 204 ";
     public static int SUCCESS_RESPONSE_CODE=200;
     public static String SUCCESS_STATUS_LINE="HTTP/1.1 200 ";
     
