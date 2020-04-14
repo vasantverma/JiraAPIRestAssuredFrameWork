@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3813" started-at="2020-04-13T15:27:17Z" finished-at="2020-04-13T15:27:21Z">
+  <suite name="Default suite" duration-ms="3486" started-at="2020-04-14T14:06:45Z" finished-at="2020-04-14T14:06:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3813" started-at="2020-04-13T15:27:17Z" finished-at="2020-04-13T15:27:21Z">
-      <class name="com.jira.tests.IssueAPIs.DeleteIssue">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.IssueAPIs.DeleteIssue@1188e820]" name="setUp" is-config="true" duration-ms="1025" started-at="2020-04-13T20:57:17Z" finished-at="2020-04-13T20:57:18Z">
+    <test name="Default test" duration-ms="3486" started-at="2020-04-14T14:06:45Z" finished-at="2020-04-14T14:06:49Z">
+      <class name="com.jira.tests.AttachmentAPIs.DeleteAttachment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.AttachmentAPIs.DeleteAttachment@1188e820]" name="setUp" is-config="true" duration-ms="964" started-at="2020-04-14T19:36:45Z" finished-at="2020-04-14T19:36:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDeleteIssueTest()[pri:0, instance:com.jira.tests.IssueAPIs.DeleteIssue@1188e820]" name="verifyDeleteIssueTest" duration-ms="2714" started-at="2020-04-13T20:57:18Z" finished-at="2020-04-13T20:57:21Z">
+        <test-method status="PASS" signature="verifyDeleteAttachmentTest()[pri:0, instance:com.jira.tests.AttachmentAPIs.DeleteAttachment@1188e820]" name="verifyDeleteAttachmentTest" duration-ms="2466" started-at="2020-04-14T19:36:46Z" finished-at="2020-04-14T19:36:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeleteIssueTest -->
-      </class> <!-- com.jira.tests.IssueAPIs.DeleteIssue -->
+        </test-method> <!-- verifyDeleteAttachmentTest -->
+      </class> <!-- com.jira.tests.AttachmentAPIs.DeleteAttachment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

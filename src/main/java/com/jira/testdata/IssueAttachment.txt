@@ -1,0 +1,2 @@
+This is a text file.
+This file can be uploaded to an jira issue using AddAttcahment API Request.

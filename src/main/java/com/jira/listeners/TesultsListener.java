@@ -30,7 +30,7 @@ public class TesultsListener  implements ITestListener {
 	public void onTestSuccess(ITestResult iTestResult) {
 		Map<String, Object> testCase = new HashMap<String, Object>();
 		testCase.put("name", getTestMethodName(iTestResult));
-		testCase.put("suite", "Currency Converter API Test Suite");
+		testCase.put("suite", "Jira API Test Suite");
 		testCase.put("result", "pass");
 		testCase.put("params", getTestParams(iTestResult));
 		testCases.add(testCase);
@@ -50,7 +50,7 @@ public class TesultsListener  implements ITestListener {
 	public void onTestSkipped(ITestResult iTestResult) {
 		Map<String, Object> testCase = new HashMap<String, Object>();
 		testCase.put("name", getTestMethodName(iTestResult));
-		testCase.put("suite", "Currency Converter API Test Suite");
+		testCase.put("suite", "Jira API Test Suite");
 		testCase.put("result", "fail");
 		testCase.put("params", getTestParams(iTestResult));
 		testCases.add(testCase);
@@ -70,7 +70,7 @@ public class TesultsListener  implements ITestListener {
 	public void onFinish(ITestContext iTestContext) {
 		// Map<String, Object> to hold your test results data.
 		Map<String, Object> data = new HashMap<String, Object>();
-		data.put("target","eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjliY2Y0OTQ2LWE5YjEtNDIwYi05MTU2LTk0ZTVjYmRmYzMwZi0xNTg1ODM3NzA5NzY3IiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiMDVlOTRjZjMtYThlMS00MWYzLWE0ODMtYzc1OTZkNzZiMGM3IiwidHlwZSI6InQifQ.2pclE6xsOAFYXu21EaDe_BYAF--lfd6gMkxNRzDlB34");
+		data.put("target","eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImEzYTQ1MTQ5LWM2ZTUtNGE4NS04NjJmLWQ4NzU1ZDQwNzgwOC0xNTg2ODczODU3Mjg1IiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiZjQ4ZmM4MWQtZjliYS00NWVhLWJlMGEtN2M2NjRlZGNkNjE5IiwidHlwZSI6InQifQ.Erg30WtYvEaXlEXdH9emZnAl93wwFCsLarEE-2nZxgg");
 
 		Map<String, Object> results = new HashMap<String, Object>();
 		results.put("cases", testCases);

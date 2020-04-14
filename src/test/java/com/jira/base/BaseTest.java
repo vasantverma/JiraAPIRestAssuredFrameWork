@@ -52,7 +52,7 @@ public class BaseTest
      
      
      /**
-      * This method is used for declare RequestSpecBuilder and ResponseSpecBuilder 
+      * This method is used for declare RequestSpecBuilder and ResponseSpecBuilder based on auth mode specified in config.properties file.
       */
      @BeforeMethod
      public void setUp()
@@ -88,6 +88,7 @@ public class BaseTest
     		.build();
     		
     	 }
+    	 
     	 else if(authMode.contains("oauth "))
     	 {
     		 

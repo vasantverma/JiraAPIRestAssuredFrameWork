@@ -1,0 +1,613 @@
+{
+	"info": {
+		"_postman_id": "b79c00f6-247f-4e07-8bba-ab2452ee3617",
+		"name": "JiraAPI",
+		"description": "Authentication API\r\n\r\nhttps://developer.atlassian.com/jiradev/jira-apis/jira-rest-apis/jira-rest-api-tutorials/jira-rest-api-example-cookie-based-authentication\r\n\r\n\r\n\r\nCreateIssue\r\n\r\nhttps://docs.atlassian.com/jira/REST/cloud/#api/2/issue-createIssue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IssueAPIs",
+			"item": [
+				{
+					"name": "GetIssueTypeByProject",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/createmeta?projectKeys=RES&expand=projects.issuetypes.fields",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"createmeta"
+							],
+							"query": [
+								{
+									"key": "projectKeys",
+									"value": "RES"
+								},
+								{
+									"key": "expand",
+									"value": "projects.issuetypes.fields"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateIssue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fields\": \n    {\n       \"project\":\n       {\n          \"id\": \"10100\"\n       },\n       \"summary\": \"Res-Project Cookie Issue\",\n       \"description\": \"This is a bug and is added using RestAssured script\",\n       \"issuetype\": {\n          \"id\": \"10000\"\n       }\n   }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetIssueDetails",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/RES-18?fields=summary,description,comment,resolution",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"RES-18"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "summary,description,comment,resolution"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditIssue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n  \n  \"update\": \n  {\n    \"summary\": \n      [\n        {\n        \"set\": \"Issue Summary changed through Postman\"\n        }\n      ],\n      \"description\":\n      [\n      \t{\n      \t\t \"set\": \"Changed the issue description through postman\"\n      \t}\n      ],\n       \"labels\":\n      [\n      \t{\n      \t\t \"add\": \"burning\"\n      \t},\n      \t{\n      \t\t\"remove\":\"blocker\"\n      \t}\n      ]\n   }\n}"
+						},
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/RES-19",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"RES-19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteIssue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/RES-16",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"RES-16"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "CommentAPIs",
+			"item": [
+				{
+					"name": "AddComment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n  \"body\": \"Added third comment using postman\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/RES-11/comment",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"RES-11",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetComment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateComment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n  \"body\": \"Updated the comment using postman app\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/RES-10/comment/10104",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"RES-10",
+								"comment",
+								"10104"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateComment Copy",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n  \"body\": \"Updated the comment using postman app\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/RES-10/comment/10104",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"RES-10",
+								"comment",
+								"10104"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteComment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/RES-10/comment/10104",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"RES-10",
+								"comment",
+								"10104"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "AttachmentAPIs",
+			"item": [
+				{
+					"name": "AddAttachment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Atlassian-Token",
+								"value": "no-check",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/Vasant/EclipseWorkspace/JiraAPIRestAssuredFrameWork/src/main/java/com/jira/testdata/Attachment.txt"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/rest/api/2/issue/RES-11/attachments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"RES-11",
+								"attachments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAttachmentDetails",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/api/2/attachment/10003",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"attachment",
+								"10003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAttachment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Jira@2020",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Vasant",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/api/2/attachment/10003",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"attachment",
+								"10003"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6f05eaed-4644-4ebe-ae8e-5414757bfc36",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "31bd913a-0031-42b9-b637-d870134530d5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "ad6e7ed7-c36a-479e-90c6-00a8ca884ca5",
+			"key": "url",
+			"value": "ENTER_API_BASE_URI",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

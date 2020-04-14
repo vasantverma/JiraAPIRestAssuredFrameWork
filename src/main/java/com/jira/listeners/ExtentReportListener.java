@@ -41,12 +41,12 @@ public class ExtentReportListener implements ITestListener
    //ITestListener overriden methods
     @Override
     public synchronized void onStart(ITestContext context) {
-        System.out.println("Extent Reports Version 4.1.3 Test Suite started!");
+        System.out.println("Extent Reports Version 4.1.3 Jira API Test Suite started!");
     }
  
     @Override
     public synchronized void onFinish(ITestContext context) {
-        System.out.println(("Extent Reports Version 4.1.3  Test Suite is ending!"));
+        System.out.println(("Extent Reports Version 4.1.3 Jira API Test Suite is ending!"));
         extent.flush();
     }
  

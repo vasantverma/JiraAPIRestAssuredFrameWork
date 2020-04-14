@@ -9,14 +9,29 @@
 			
 	</listeners>
 	
-	<test name="Jira API Testcases">
+	<test name="Jira IssueAPIs Testcases">
 		<classes>
-			<class name="com.jira.tests.CreateIssue"></class>
-			<class name="com.jira.tests.GetIssueDetails"></class>
-			<class name="com.jira.tests.EditIssue"></class>
-			<class name="com.jira.tests.DeleteIssue"></class>
-			
-		</classes>
+			<class name="com.jira.tests.IssueAPIs.CreateIssue"></class>
+			<class name="com.jira.tests.IssueAPIs.GetIssueDetails"></class>
+			<class name="com.jira.tests.IssueAPIs.EditIssue"></class>
+			<class name="com.jira.tests.IssueAPIs.DeleteIssue"></class>
+	   </classes>
 	</test>
-
+	
+    <test name="Jira CommentAPIs Testcases">
+		<classes>
+			<class name="com.jira.tests.CommentAPIs.AddComment"></class>  
+			<class name="com.jira.tests.CommentAPIs.GetComment"></class>
+			<class name="com.jira.tests.CommentAPIs.UpdateComment"></class>
+			<class name="com.jira.tests.CommentAPIs.DeleteComment"></class>
+	   </classes>
+	</test>
+	
+	<test name="Jira AttachmentAPIs Testcases">
+		<classes>
+			<class name="com.jira.tests.AttachmentAPIs.AddAttachment"></class>  
+			<class name="com.jira.tests.AttachmentAPIs.GetAttachmentDetails"></class>
+			<class name="com.jira.tests.AttachmentAPIs.DeleteAttachment"></class>
+	   </classes>
+	</test>
 </suite>

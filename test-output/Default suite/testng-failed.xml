@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jira.tests.DeleteIssue">
+      <class name="com.jira.tests.AttachmentAPIs.DeleteAttachment">
         <methods>
-          <include name="verifyDeleteIssueTest"/>
           <include name="setUp"/>
+          <include name="verifyDeleteAttachmentTest"/>
         </methods>
-      </class> <!-- com.jira.tests.DeleteIssue -->
+      </class> <!-- com.jira.tests.AttachmentAPIs.DeleteAttachment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
