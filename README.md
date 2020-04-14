@@ -35,7 +35,7 @@ Step 10 : You can execute the testcases using the testng.xml file present under 
 
 
 ### Prerequisites
-1.Jira Software Server
+1.Jira Software 
 
 2.Java 8 or higher
 
