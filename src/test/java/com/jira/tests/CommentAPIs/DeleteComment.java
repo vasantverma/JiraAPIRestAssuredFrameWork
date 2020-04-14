@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 public class DeleteComment extends BaseTest
 {
 	  String endpoint="/rest/api/2/issue/{issueKey}/comment/{CommentId}";
-	  String issuekey="RES-10";
-	  String commentId="10103";
+	  String issuekey="RES-11";
+	  String commentId="10106";
 	  
 	  @Test
 	  public void verifyDeleteCommentTest()

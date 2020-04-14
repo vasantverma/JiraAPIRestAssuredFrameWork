@@ -1,21 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="11" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4811" started-at="2020-04-14T17:55:01Z" finished-at="2020-04-14T17:55:06Z">
+  <suite name="Jira API Test Suite" duration-ms="12047" started-at="2020-04-14T18:44:18Z" finished-at="2020-04-14T18:44:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4811" started-at="2020-04-14T17:55:01Z" finished-at="2020-04-14T17:55:06Z">
-      <class name="com.jira.tests.IssueAPIs.CreateIssue">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.IssueAPIs.CreateIssue@101df177]" name="setUp" is-config="true" duration-ms="967" started-at="2020-04-14T23:25:01Z" finished-at="2020-04-14T23:25:02Z">
+    <test name="Jira IssueAPIs Testcases" duration-ms="6554" started-at="2020-04-14T18:44:18Z" finished-at="2020-04-14T18:44:24Z">
+      <class name="com.jira.tests.IssueAPIs.GetIssueDetails">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.IssueAPIs.GetIssueDetails@51e5fc98]" name="setUp" is-config="true" duration-ms="1" started-at="2020-04-15T00:14:24Z" finished-at="2020-04-15T00:14:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyCreateIssueTest()[pri:0, instance:com.jira.tests.IssueAPIs.CreateIssue@101df177]" name="verifyCreateIssueTest" duration-ms="3813" started-at="2020-04-14T23:25:02Z" finished-at="2020-04-14T23:25:06Z">
+        <test-method status="FAIL" signature="verifyGetIssue()[pri:0, instance:com.jira.tests.IssueAPIs.GetIssueDetails@51e5fc98]" name="verifyGetIssue" duration-ms="317" started-at="2020-04-15T00:14:24Z" finished-at="2020-04-15T00:14:24Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [10403] but found [10404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [10403] but found [10404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.jira.tests.IssueAPIs.GetIssueDetails.verifyGetIssue(GetIssueDetails.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetIssue -->
+      </class> <!-- com.jira.tests.IssueAPIs.GetIssueDetails -->
+      <class name="com.jira.tests.IssueAPIs.DeleteIssue">
+        <test-method status="PASS" signature="verifyDeleteIssueTest()[pri:0, instance:com.jira.tests.IssueAPIs.DeleteIssue@12e61fe6]" name="verifyDeleteIssueTest" duration-ms="297" started-at="2020-04-15T00:14:24Z" finished-at="2020-04-15T00:14:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteIssueTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.IssueAPIs.DeleteIssue@12e61fe6]" name="setUp" is-config="true" duration-ms="0" started-at="2020-04-15T00:14:24Z" finished-at="2020-04-15T00:14:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.jira.tests.IssueAPIs.DeleteIssue -->
+      <class name="com.jira.tests.IssueAPIs.CreateIssue">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.IssueAPIs.CreateIssue@4e91d63f]" name="setUp" is-config="true" duration-ms="969" started-at="2020-04-15T00:14:18Z" finished-at="2020-04-15T00:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCreateIssueTest()[pri:0, instance:com.jira.tests.IssueAPIs.CreateIssue@4e91d63f]" name="verifyCreateIssueTest" duration-ms="4638" started-at="2020-04-15T00:14:19Z" finished-at="2020-04-15T00:14:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateIssueTest -->
       </class> <!-- com.jira.tests.IssueAPIs.CreateIssue -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.jira.tests.IssueAPIs.EditIssue">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.IssueAPIs.EditIssue@7c469c48]" name="setUp" is-config="true" duration-ms="16" started-at="2020-04-15T00:14:24Z" finished-at="2020-04-15T00:14:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyEditIssueTest()[pri:0, instance:com.jira.tests.IssueAPIs.EditIssue@7c469c48]" name="verifyEditIssueTest" duration-ms="245" started-at="2020-04-15T00:14:24Z" finished-at="2020-04-15T00:14:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditIssueTest -->
+      </class> <!-- com.jira.tests.IssueAPIs.EditIssue -->
+    </test> <!-- Jira IssueAPIs Testcases -->
+    <test name="Jira CommentAPIs Testcases" duration-ms="869" started-at="2020-04-14T18:44:27Z" finished-at="2020-04-14T18:44:28Z">
+      <class name="com.jira.tests.CommentAPIs.DeleteComment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.CommentAPIs.DeleteComment@5c909414]" name="setUp" is-config="true" duration-ms="15" started-at="2020-04-15T00:14:28Z" finished-at="2020-04-15T00:14:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyDeleteCommentTest()[pri:0, instance:com.jira.tests.CommentAPIs.DeleteComment@5c909414]" name="verifyDeleteCommentTest" duration-ms="142" started-at="2020-04-15T00:14:28Z" finished-at="2020-04-15T00:14:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteCommentTest -->
+      </class> <!-- com.jira.tests.CommentAPIs.DeleteComment -->
+      <class name="com.jira.tests.CommentAPIs.UpdateComment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.CommentAPIs.UpdateComment@5cee5251]" name="setUp" is-config="true" duration-ms="4" started-at="2020-04-15T00:14:28Z" finished-at="2020-04-15T00:14:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUpdateCommentTest()[pri:0, instance:com.jira.tests.CommentAPIs.UpdateComment@5cee5251]" name="verifyUpdateCommentTest" duration-ms="234" started-at="2020-04-15T00:14:28Z" finished-at="2020-04-15T00:14:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateCommentTest -->
+      </class> <!-- com.jira.tests.CommentAPIs.UpdateComment -->
+      <class name="com.jira.tests.CommentAPIs.GetComment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.CommentAPIs.GetComment@7adda9cc]" name="setUp" is-config="true" duration-ms="10" started-at="2020-04-15T00:14:27Z" finished-at="2020-04-15T00:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyGetCommentTest()[pri:0, instance:com.jira.tests.CommentAPIs.GetComment@7adda9cc]" name="verifyGetCommentTest" duration-ms="177" started-at="2020-04-15T00:14:27Z" finished-at="2020-04-15T00:14:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetCommentTest -->
+      </class> <!-- com.jira.tests.CommentAPIs.GetComment -->
+      <class name="com.jira.tests.CommentAPIs.AddComment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.CommentAPIs.AddComment@7c0c77c7]" name="setUp" is-config="true" duration-ms="9" started-at="2020-04-15T00:14:27Z" finished-at="2020-04-15T00:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyAddCommentTest()[pri:0, instance:com.jira.tests.CommentAPIs.AddComment@7c0c77c7]" name="verifyAddCommentTest" duration-ms="259" started-at="2020-04-15T00:14:27Z" finished-at="2020-04-15T00:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddCommentTest -->
+      </class> <!-- com.jira.tests.CommentAPIs.AddComment -->
+    </test> <!-- Jira CommentAPIs Testcases -->
+    <test name="Jira AttachmentAPIs Testcases" duration-ms="707" started-at="2020-04-14T18:44:29Z" finished-at="2020-04-14T18:44:30Z">
+      <class name="com.jira.tests.AttachmentAPIs.DeleteAttachment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.AttachmentAPIs.DeleteAttachment@7f552bd3]" name="setUp" is-config="true" duration-ms="0" started-at="2020-04-15T00:14:30Z" finished-at="2020-04-15T00:14:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyDeleteAttachmentTest()[pri:0, instance:com.jira.tests.AttachmentAPIs.DeleteAttachment@7f552bd3]" name="verifyDeleteAttachmentTest" duration-ms="102" started-at="2020-04-15T00:14:30Z" finished-at="2020-04-15T00:14:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteAttachmentTest -->
+      </class> <!-- com.jira.tests.AttachmentAPIs.DeleteAttachment -->
+      <class name="com.jira.tests.AttachmentAPIs.GetAttachmentDetails">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.AttachmentAPIs.GetAttachmentDetails@3eb7fc54]" name="setUp" is-config="true" duration-ms="0" started-at="2020-04-15T00:14:30Z" finished-at="2020-04-15T00:14:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyGetAttachmentDetailsTest()[pri:0, instance:com.jira.tests.AttachmentAPIs.GetAttachmentDetails@3eb7fc54]" name="verifyGetAttachmentDetailsTest" duration-ms="228" started-at="2020-04-15T00:14:30Z" finished-at="2020-04-15T00:14:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAttachmentDetailsTest -->
+      </class> <!-- com.jira.tests.AttachmentAPIs.GetAttachmentDetails -->
+      <class name="com.jira.tests.AttachmentAPIs.AddAttachment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.AttachmentAPIs.AddAttachment@79b06cab]" name="setUp" is-config="true" duration-ms="7" started-at="2020-04-15T00:14:29Z" finished-at="2020-04-15T00:14:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyAddAttachmentTest()[pri:0, instance:com.jira.tests.AttachmentAPIs.AddAttachment@79b06cab]" name="verifyAddAttachmentTest" duration-ms="361" started-at="2020-04-15T00:14:29Z" finished-at="2020-04-15T00:14:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddAttachmentTest -->
+      </class> <!-- com.jira.tests.AttachmentAPIs.AddAttachment -->
+    </test> <!-- Jira AttachmentAPIs Testcases -->
+  </suite> <!-- Jira API Test Suite -->
 </testng-results>

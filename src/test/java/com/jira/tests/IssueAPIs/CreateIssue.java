@@ -23,8 +23,8 @@ public class CreateIssue extends BaseTest
 	//Issue constants.This will be used in further api request
 	static String issueId;
 	static String issueKey;
-	static String summary="Rest Assured Issue 23";
-	static String description="This is a bug and issue number is 23";
+	static String summary="Rest Assured Issue 24";
+	static String description="This is a bug and issue number is 24";
     static String issueLink;
   @Test
   public void verifyCreateIssueTest()

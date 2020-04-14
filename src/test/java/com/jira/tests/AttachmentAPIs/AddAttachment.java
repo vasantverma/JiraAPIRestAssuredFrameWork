@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 public class AddAttachment extends BaseTest
 {
 	   String endpoint="/rest/api/2/issue/{issueKey}/attachments";
-	   String issuekey="RES-18";
+	   String issuekey="RES-23";
 	   File attachment=new File(APIConstants.ATTACHMENT_FILEPATH);
 	   String response;
 	   

@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class GetAttachmentDetails extends BaseTest
 {
 	   String endpoint="/rest/api/2/attachment/{attachmentid}";
-	   String attcahmentID="10003";
+	   String attcahmentID="10005";
 	   String response;
 	   
 	 @Test

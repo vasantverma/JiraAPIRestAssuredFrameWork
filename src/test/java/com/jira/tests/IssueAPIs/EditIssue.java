@@ -24,7 +24,7 @@ public class EditIssue extends BaseTest
    String newDescription="Changed the description summary through Rest Assured";
    String label1="blocker";
    String label2="burning";
-   String Issuekey="RES-10";
+   String Issuekey="RES-23";
  	
 	@Test
 	public void verifyEditIssueTest()

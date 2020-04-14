@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 
 import com.jira.base.BaseTest;
 import com.jira.util.APIConstants;
-
-import io.restassured.path.json.JsonPath;
+import com.jira.util.CommonMethods;
 
 import static io.restassured.RestAssured.*;
 
@@ -15,6 +14,11 @@ public class GetIssueDetails extends BaseTest
 {
   //Variable declaration
   String endpoint="/rest/api/2/issue/{IssueKey}";
+  String issuekey="RES-23";
+  String issueId="10404";
+  String issueLink="http://localhost:8086/rest/api/2/issue/10403";
+  String issueSummary="Rest Assured Issue 23";
+  String issueDescription="This is a bug and issue number is 23";
   String response;
   
 
@@ -40,15 +44,14 @@ public class GetIssueDetails extends BaseTest
 			           .statusLine(APIConstants.SUCCESS_STATUS_LINE)
 			           .extract().asString();
 	
-	  //Converting the response object using JsonPath
-    JsonPath js=new JsonPath(response);
-    
+	
     //Assertion for response body
-    Assert.assertEquals(js.getString("id"),CreateIssue.issueId);
-    Assert.assertEquals(js.getString("key"),CreateIssue.issueKey);
-    Assert.assertEquals(js.getString("self"),CreateIssue.issueLink);
-    Assert.assertEquals(js.getString("fields.summary"),CreateIssue.summary);
-    Assert.assertEquals(js.getString("fields.description"),CreateIssue.description);
+	CommonMethods cm=new CommonMethods(response);
+    Assert.assertEquals(cm.getStringValue("id"),issueId);
+    Assert.assertEquals(cm.getStringValue("key"),issuekey);
+    Assert.assertEquals(cm.getStringValue("self"),issueLink);
+    Assert.assertEquals(cm.getStringValue("fields.summary"),issueSummary);
+    Assert.assertEquals(cm.getStringValue("fields.description"),issueDescription);
     
    
     

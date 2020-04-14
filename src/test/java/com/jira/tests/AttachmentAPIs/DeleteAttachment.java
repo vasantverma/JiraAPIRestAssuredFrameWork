@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class DeleteAttachment extends BaseTest
 {
 	   String endpoint="/rest/api/2/attachment/{attachmentid}";
-	   String attcahmentID="10004";
+	   String attcahmentID="10005";
 	   
 	   @Test
 	   public void verifyDeleteAttachmentTest()

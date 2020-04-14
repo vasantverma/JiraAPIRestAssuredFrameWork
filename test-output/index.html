@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Jira_API_Test_Suite">
+              <span class="suite-name border-failed">Jira API Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Vinay Varma\AppData\Local\Temp\testng-eclipse--854248221\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Jira_API_Test_Suite">
+                    <span>D:\Vasant\EclipseWorkspace\JiraAPIRestAssuredFrameWork\src\test\resources\TestRunner\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Jira_API_Test_Suite">
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Jira_API_Test_Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Jira_API_Test_Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Jira_API_Test_Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Jira_API_Test_Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Jira_API_Test_Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,21 +90,80 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Jira_API_Test_Suite" class="hide-methods failed suite-Jira_API_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Jira_API_Test_Suite -->
+                      <a href="#" panel-name="suite-Jira_API_Test_Suite" class="show-methods failed suite-Jira_API_Test_Suite"> (show)</a> <!-- show-methods failed suite-Jira_API_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Jira_API_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.IssueAPIs.GetIssueDetails" hash-for-method="verifyGetIssue">verifyGetIssue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Jira_API_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Jira_API_Test_Suite" class="hide-methods passed suite-Jira_API_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Jira_API_Test_Suite -->
+                      <a href="#" panel-name="suite-Jira_API_Test_Suite" class="show-methods passed suite-Jira_API_Test_Suite"> (show)</a> <!-- show-methods passed suite-Jira_API_Test_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Jira_API_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.jira.tests.IssueAPIs.CreateIssue" hash-for-method="verifyCreateIssueTest">verifyCreateIssueTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.AttachmentAPIs.AddAttachment" hash-for-method="verifyAddAttachmentTest">verifyAddAttachmentTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.CommentAPIs.AddComment" hash-for-method="verifyAddCommentTest">verifyAddCommentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.IssueAPIs.CreateIssue" hash-for-method="verifyCreateIssueTest">verifyCreateIssueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.AttachmentAPIs.DeleteAttachment" hash-for-method="verifyDeleteAttachmentTest">verifyDeleteAttachmentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.CommentAPIs.DeleteComment" hash-for-method="verifyDeleteCommentTest">verifyDeleteCommentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.IssueAPIs.DeleteIssue" hash-for-method="verifyDeleteIssueTest">verifyDeleteIssueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.IssueAPIs.EditIssue" hash-for-method="verifyEditIssueTest">verifyEditIssueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.AttachmentAPIs.GetAttachmentDetails" hash-for-method="verifyGetAttachmentDetailsTest">verifyGetAttachmentDetailsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.CommentAPIs.GetComment" hash-for-method="verifyGetCommentTest">verifyGetCommentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Jira_API_Test_Suite" title="com.jira.tests.CommentAPIs.UpdateComment" hash-for-method="verifyUpdateCommentTest">verifyUpdateCommentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Jira_API_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -115,8 +174,42 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Jira_API_Test_Suite" class="panel Jira_API_Test_Suite">
+          <div class="suite-Jira_API_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.jira.tests.IssueAPIs.GetIssueDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetIssue">
+                  </a> <!-- verifyGetIssue -->
+                  <span class="method-name">verifyGetIssue</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [10403] but found [10404]
+	at com.jira.tests.IssueAPIs.GetIssueDetails.verifyGetIssue(GetIssueDetails.java:50)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-failed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.IssueAPIs.DeleteIssue</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteIssueTest">
+                  </a> <!-- verifyDeleteIssueTest -->
+                  <span class="method-name">verifyDeleteIssueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.jira.tests.IssueAPIs.CreateIssue</span>
@@ -130,89 +223,278 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.CommentAPIs.AddComment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddCommentTest">
+                  </a> <!-- verifyAddCommentTest -->
+                  <span class="method-name">verifyAddCommentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.IssueAPIs.EditIssue</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditIssueTest">
+                  </a> <!-- verifyEditIssueTest -->
+                  <span class="method-name">verifyEditIssueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.CommentAPIs.DeleteComment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteCommentTest">
+                  </a> <!-- verifyDeleteCommentTest -->
+                  <span class="method-name">verifyDeleteCommentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.AttachmentAPIs.DeleteAttachment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteAttachmentTest">
+                  </a> <!-- verifyDeleteAttachmentTest -->
+                  <span class="method-name">verifyDeleteAttachmentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.CommentAPIs.GetComment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetCommentTest">
+                  </a> <!-- verifyGetCommentTest -->
+                  <span class="method-name">verifyGetCommentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.AttachmentAPIs.GetAttachmentDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetAttachmentDetailsTest">
+                  </a> <!-- verifyGetAttachmentDetailsTest -->
+                  <span class="method-name">verifyGetAttachmentDetailsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.AttachmentAPIs.AddAttachment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddAttachmentTest">
+                  </a> <!-- verifyAddAttachmentTest -->
+                  <span class="method-name">verifyAddAttachmentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+          <div class="suite-Jira_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.jira.tests.CommentAPIs.UpdateComment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUpdateCommentTest">
+                  </a> <!-- verifyUpdateCommentTest -->
+                  <span class="method-name">verifyUpdateCommentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Jira_API_Test_Suite-class-passed -->
+        </div> <!-- panel Jira_API_Test_Suite -->
+        <div panel-name="test-xml-Jira_API_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Vinay Varma\AppData\Local\Temp\testng-eclipse--854248221\testng-customsuite.xml</span>
+            <span class="header-content">D:\Vasant\EclipseWorkspace\JiraAPIRestAssuredFrameWork\src\test\resources\TestRunner\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Jira API Test Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.jira.listeners.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.jira.listeners.TestAllureListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.jira.listeners.TesultsListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Jira IssueAPIs Testcases&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.jira.tests.IssueAPIs.CreateIssue&quot;/&gt;
+      &lt;class name=&quot;com.jira.tests.IssueAPIs.GetIssueDetails&quot;/&gt;
+      &lt;class name=&quot;com.jira.tests.IssueAPIs.EditIssue&quot;/&gt;
+      &lt;class name=&quot;com.jira.tests.IssueAPIs.DeleteIssue&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Jira IssueAPIs Testcases --&gt;
+  &lt;test name=&quot;Jira CommentAPIs Testcases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.jira.tests.CommentAPIs.AddComment&quot;/&gt;
+      &lt;class name=&quot;com.jira.tests.CommentAPIs.GetComment&quot;/&gt;
+      &lt;class name=&quot;com.jira.tests.CommentAPIs.UpdateComment&quot;/&gt;
+      &lt;class name=&quot;com.jira.tests.CommentAPIs.DeleteComment&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Jira CommentAPIs Testcases --&gt;
+  &lt;test name=&quot;Jira AttachmentAPIs Testcases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.jira.tests.AttachmentAPIs.AddAttachment&quot;/&gt;
+      &lt;class name=&quot;com.jira.tests.AttachmentAPIs.GetAttachmentDetails&quot;/&gt;
+      &lt;class name=&quot;com.jira.tests.AttachmentAPIs.DeleteAttachment&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Jira AttachmentAPIs Testcases --&gt;
+&lt;/suite&gt; &lt;!-- Jira API Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Jira_API_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Jira API Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Jira IssueAPIs Testcases (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Jira CommentAPIs Testcases (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Jira AttachmentAPIs Testcases (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Jira_API_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Jira API Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Jira_API_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Jira API Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Jira_API_Test_Suite');
+function tableData_Jira_API_Test_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyCreateIssueTest')
 data.setCell(0, 2, 'com.jira.tests.IssueAPIs.CreateIssue')
-data.setCell(0, 3, 3813);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 4638);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyAddAttachmentTest')
+data.setCell(1, 2, 'com.jira.tests.AttachmentAPIs.AddAttachment')
+data.setCell(1, 3, 361);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyGetIssue')
+data.setCell(2, 2, 'com.jira.tests.IssueAPIs.GetIssueDetails')
+data.setCell(2, 3, 317);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyDeleteIssueTest')
+data.setCell(3, 2, 'com.jira.tests.IssueAPIs.DeleteIssue')
+data.setCell(3, 3, 297);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAddCommentTest')
+data.setCell(4, 2, 'com.jira.tests.CommentAPIs.AddComment')
+data.setCell(4, 3, 259);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyEditIssueTest')
+data.setCell(5, 2, 'com.jira.tests.IssueAPIs.EditIssue')
+data.setCell(5, 3, 245);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyUpdateCommentTest')
+data.setCell(6, 2, 'com.jira.tests.CommentAPIs.UpdateComment')
+data.setCell(6, 3, 234);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyGetAttachmentDetailsTest')
+data.setCell(7, 2, 'com.jira.tests.AttachmentAPIs.GetAttachmentDetails')
+data.setCell(7, 3, 228);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyGetCommentTest')
+data.setCell(8, 2, 'com.jira.tests.CommentAPIs.GetComment')
+data.setCell(8, 3, 177);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyDeleteCommentTest')
+data.setCell(9, 2, 'com.jira.tests.CommentAPIs.DeleteComment')
+data.setCell(9, 3, 142);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyDeleteAttachmentTest')
+data.setCell(10, 2, 'com.jira.tests.AttachmentAPIs.DeleteAttachment')
+data.setCell(10, 3, 102);
+window.suiteTableData['Jira_API_Test_Suite']= { tableData: data, tableDiv: 'times-div-Jira_API_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-Jira_API_Test_Suite">
+              </div> <!-- times-div-Jira_API_Test_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Jira_API_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Jira API Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Jira_API_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Jira_API_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -225,7 +507,119 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCreateIssueTest</span>
-                <span class="method-start">967 ms</span>
+                <span class="method-start">969 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.IssueAPIs.GetIssueDetails</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5641 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyGetIssue</span>
+                <span class="method-start">5642 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.IssueAPIs.EditIssue</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5968 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditIssueTest</span>
+                <span class="method-start">5984 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.IssueAPIs.DeleteIssue</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6238 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteIssueTest</span>
+                <span class="method-start">6238 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.CommentAPIs.AddComment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9163 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddCommentTest</span>
+                <span class="method-start">9172 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.CommentAPIs.GetComment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGetCommentTest</span>
+                <span class="method-start">9443 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.CommentAPIs.UpdateComment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9631 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUpdateCommentTest</span>
+                <span class="method-start">9635 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.CommentAPIs.DeleteComment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteCommentTest</span>
+                <span class="method-start">9884 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.AttachmentAPIs.AddAttachment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11326 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddAttachmentTest</span>
+                <span class="method-start">11333 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.AttachmentAPIs.GetAttachmentDetails</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11696 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGetAttachmentDetailsTest</span>
+                <span class="method-start">11696 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.jira.tests.AttachmentAPIs.DeleteAttachment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteAttachmentTest</span>
+                <span class="method-start">11929 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

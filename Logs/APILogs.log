@@ -1,20 +1,24 @@
-[INFO ] 14-04-2020 22:54:01.881 [main] CreateIssue - Executing Create Issue API Request
-[INFO ] 14-04-2020 22:54:04.104 [main] CreateIssue - Issue Create Successfully
-[INFO ] 14-04-2020 22:54:04.104 [main] CreateIssue - Issue Id :10400
-[INFO ] 14-04-2020 22:54:04.107 [main] CreateIssue - Issue Id :RES-20
-[INFO ] 14-04-2020 22:54:04.107 [main] CreateIssue - Issue Id :http://localhost:8086/rest/api/2/issue/10400
-[INFO ] 14-04-2020 23:01:38.828 [main] CreateIssue - Executing Create Issue API Request
-[INFO ] 14-04-2020 23:01:39.370 [main] CreateIssue - Issue Create Successfully
-[INFO ] 14-04-2020 23:01:39.371 [main] CreateIssue - Issue Id :10401
-[INFO ] 14-04-2020 23:01:39.371 [main] CreateIssue - Issue Id :RES-21
-[INFO ] 14-04-2020 23:01:39.372 [main] CreateIssue - Issue Id :http://localhost:8086/rest/api/2/issue/10401
-[INFO ] 14-04-2020 23:23:35.724 [main] CreateIssue - Executing Create Issue API Request
-[INFO ] 14-04-2020 23:23:39.616 [main] CreateIssue - Issue Create Successfully
-[INFO ] 14-04-2020 23:23:39.616 [main] CreateIssue - Issue Id :10402
-[INFO ] 14-04-2020 23:23:39.631 [main] CreateIssue - Issue Id :RES-22
-[INFO ] 14-04-2020 23:23:39.631 [main] CreateIssue - Issue Id :http://localhost:8086/rest/api/2/issue/10402
-[INFO ] 14-04-2020 23:25:03.186 [main] CreateIssue - Executing Create Issue API Request
-[INFO ] 14-04-2020 23:25:06.470 [main] CreateIssue - Successfully executed CreateIssue API Request
-[INFO ] 14-04-2020 23:25:06.470 [main] CreateIssue - Issue Id :10403
-[INFO ] 14-04-2020 23:25:06.471 [main] CreateIssue - Issue Id :RES-23
-[INFO ] 14-04-2020 23:25:06.471 [main] CreateIssue - Issue Id :http://localhost:8086/rest/api/2/issue/10403
+[INFO ] 15-04-2020 00:14:19.929 [main] CreateIssue - Executing Create Issue API Request
+[INFO ] 15-04-2020 00:14:23.997 [main] CreateIssue - Successfully executed CreateIssue API Request
+[INFO ] 15-04-2020 00:14:23.997 [main] CreateIssue - Issue Id :10404
+[INFO ] 15-04-2020 00:14:24.003 [main] CreateIssue - Issue Id :RES-24
+[INFO ] 15-04-2020 00:14:24.003 [main] CreateIssue - Issue Id :http://localhost:8086/rest/api/2/issue/10404
+[INFO ] 15-04-2020 00:14:24.046 [main] GetIssueDetails - Executing Get Issue Details API Request
+[INFO ] 15-04-2020 00:14:24.402 [main] EditIssue - Executing the Edit Issue API Request
+[INFO ] 15-04-2020 00:14:24.625 [main] EditIssue - Successfully executed EditIssue API Request
+[INFO ] 15-04-2020 00:14:24.634 [main] DeleteIssue - Executing the DeleteIssue API Request
+[INFO ] 15-04-2020 00:14:24.930 [main] DeleteIssue - Successfully executed  DeleteIssue API Request
+[INFO ] 15-04-2020 00:14:27.571 [main] AddComment - Executing the AddComment API Request
+[INFO ] 15-04-2020 00:14:27.827 [main] AddComment - Successfully executed the AddComment API Request
+[INFO ] 15-04-2020 00:14:27.843 [main] GetComment - Executing the GetComment API Request
+[INFO ] 15-04-2020 00:14:28.016 [main] GetComment - Sucessfully Executed the GetComment API Request
+[INFO ] 15-04-2020 00:14:28.034 [main] UpdateComment - Executing the UpdateComment API Request
+[INFO ] 15-04-2020 00:14:28.265 [main] UpdateComment - Successfully executed the UpdateComment API Request
+[INFO ] 15-04-2020 00:14:28.285 [main] DeleteComment - Executing Delete Comment API Request
+[INFO ] 15-04-2020 00:14:28.422 [main] DeleteComment - Successfully executed the DeleteComment API Request
+[INFO ] 15-04-2020 00:14:29.737 [main] AddAttachment - Executing the AddAttachment API Request
+[INFO ] 15-04-2020 00:14:30.090 [main] AddAttachment - Successfully executed AddAttachment API Request
+[INFO ] 15-04-2020 00:14:30.092 [main] GetAttachmentDetails - Executing the GetAttachmentDetails API Request
+[INFO ] 15-04-2020 00:14:30.320 [main] GetAttachmentDetails - Successfully executed GetAttachmentDetails API Request
+[INFO ] 15-04-2020 00:14:30.346 [main] DeleteAttachment - Executing the DeleteAttachment API Request
+[INFO ] 15-04-2020 00:14:30.427 [main] DeleteAttachment - Successfully executed the DeleteAttachment API Request

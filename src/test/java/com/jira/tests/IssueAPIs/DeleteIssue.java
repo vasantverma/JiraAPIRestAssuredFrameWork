@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.*;
 public class DeleteIssue extends BaseTest
 {
     String endpoint="/rest/api/2/issue/{issueKey}";
-    String issuekey="RES-12";
+    String issuekey="RES-24";
     
     @Test
     public void verifyDeleteIssueTest()

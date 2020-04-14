@@ -3,8 +3,8 @@
 <suite name="Jira API Test Suite">
 	<listeners>
 		<listener class-name="com.jira.listeners.ExtentReportListener" /> 
-		<!-- <listener class-name="com.jira.listeners.TestAllureListener" /> 
-		<listener class-name="com.jira.listeners.TesultsListener" />  -->
+		<listener class-name="com.jira.listeners.TestAllureListener" /> 
+		<listener class-name="com.jira.listeners.TesultsListener" />
 		
 			
 	</listeners>

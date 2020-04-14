@@ -15,8 +15,8 @@ import org.testng.annotations.Test;
 public class AddComment extends BaseTest
 {
    String endpoint="/rest/api/2/issue/{IssueKey}/comment";
-   String issuekey="RES-11";
-   String comment="This is another comment.It has been added using Rest Assured test script";
+   String issuekey="RES-23";
+   String comment="This is a  comment.It has been added using Rest Assured test script";
    String response;
    
    @Test

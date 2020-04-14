@@ -17,9 +17,9 @@ public class UpdateComment extends BaseTest
 {
   String endpoint="/rest/api/2/issue/{issueKey}/comment/{CommentId}";
   String response;
-  String issuekey="RES-10";
-  String commentId="10103";
-  String newComment="Updated comment using the Rest Assured test script";
+  String issuekey="RES-11";
+  String commentId="10101";
+  String newComment="Updated comment using the Rest Assured-UpdateComment API  test script";
   
   @Test
   public void verifyUpdateCommentTest()
