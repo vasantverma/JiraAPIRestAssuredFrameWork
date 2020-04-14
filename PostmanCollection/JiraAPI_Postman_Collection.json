@@ -577,6 +577,41 @@
 				}
 			],
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "AuthAPIs",
+			"item": [
+				{
+					"name": "CookieBasedAuth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Vasant\",\n    \"password\": \"Jira@2020\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/rest/auth/1/session",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"auth",
+								"1",
+								"session"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"event": [
@@ -603,7 +638,7 @@
 	],
 	"variable": [
 		{
-			"id": "ad6e7ed7-c36a-479e-90c6-00a8ca884ca5",
+			"id": "3aa14075-70c7-4fa0-a95f-55784947a572",
 			"key": "url",
 			"value": "ENTER_API_BASE_URI",
 			"type": "string"

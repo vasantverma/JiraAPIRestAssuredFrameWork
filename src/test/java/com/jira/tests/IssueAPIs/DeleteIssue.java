@@ -29,8 +29,8 @@ public class DeleteIssue extends BaseTest
     	                        .delete(endpoint)
     	                .then()
     	                        .spec(responseSpec)
-    	                        .statusCode(APIConstants.UPDATE_RESPONSE_CODE)
-    	                        .statusLine(APIConstants.UPDATED_STATUS_LINE);
+    	                        .statusCode(APIConstants.DELETE_RESPONSE_CODE)
+    	                        .statusLine(APIConstants.DELETE_STATUS_LINE);
     	                
        logger.info("Successfully executed  DeleteIssue API Request");               
     	                        

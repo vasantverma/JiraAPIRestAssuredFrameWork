@@ -10,12 +10,14 @@ import java.util.Properties;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 
+import com.jira.test.AuthenticationAPIs.CookieBasedAuth;
 import com.jira.util.APIConstants;
 
 import io.restassured.authentication.PreemptiveBasicAuthScheme;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
+import io.restassured.filter.session.SessionFilter;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
@@ -56,7 +58,7 @@ public class BaseTest
       */
      @BeforeMethod
      public void setUp()
-     {
+     { 
     	 
     	 //Calling the init_prop method for getting config values
     	 prop=init_prop();
@@ -65,12 +67,19 @@ public class BaseTest
     	 String authMode=prop.getProperty("auth_mode");  
     	 
     	 //Create RequestSpecBuilder according to the auth mode
-    	 if(authMode.contains("cookie based"))
+    	 if(authMode.contains("cookie"))
     	 {
+    		 //Calling the CookieBasedAuth API methods
+    		 CookieBasedAuth cookieAuth=new CookieBasedAuth();
+    		 SessionFilter session=new SessionFilter();
+    		 cookieAuth.verifyCookieAuthAPI();
+    		 session=cookieAuth.getSessionDetails();
+    		 
     		 //Initializing the RequestSpecBuilder with common values for all api requests.
     		 requestSpec=new RequestSpecBuilder()
      		.setBaseUri(prop.getProperty("baseURI"))
      		.log(LogDetail.ALL)
+     		.addFilter(session)
      		.build();	 
     	 }
     	 else if(authMode.contains("basic"))
@@ -87,11 +96,6 @@ public class BaseTest
     		.log(LogDetail.ALL)
     		.build();
     		
-    	 }
-    	 
-    	 else if(authMode.contains("oauth "))
-    	 {
-    		 
     	 }
     	 else
     	 {
@@ -117,7 +121,6 @@ public class BaseTest
     	.log(LogDetail.ALL)
     	.build();
     	 
-    	
      }
     		 
 }

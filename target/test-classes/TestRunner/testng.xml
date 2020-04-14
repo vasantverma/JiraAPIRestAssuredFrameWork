@@ -27,4 +27,11 @@
 	   </classes>
 	</test>
 	
+	<test name="Jira AttachmentAPIs Testcases">
+		<classes>
+			<class name="com.jira.tests.AttachmentAPIs.AddAttachment"></class>  
+			<class name="com.jira.tests.AttachmentAPIs.GetAttachmentDetails"></class>
+			<class name="com.jira.tests.AttachmentAPIs.DeleteAttachment"></class>
+	   </classes>
+	</test>
 </suite>

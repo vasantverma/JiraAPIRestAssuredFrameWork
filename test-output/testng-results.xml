@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3486" started-at="2020-04-14T14:06:45Z" finished-at="2020-04-14T14:06:49Z">
+  <suite name="Default suite" duration-ms="4811" started-at="2020-04-14T17:55:01Z" finished-at="2020-04-14T17:55:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3486" started-at="2020-04-14T14:06:45Z" finished-at="2020-04-14T14:06:49Z">
-      <class name="com.jira.tests.AttachmentAPIs.DeleteAttachment">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.AttachmentAPIs.DeleteAttachment@1188e820]" name="setUp" is-config="true" duration-ms="964" started-at="2020-04-14T19:36:45Z" finished-at="2020-04-14T19:36:46Z">
+    <test name="Default test" duration-ms="4811" started-at="2020-04-14T17:55:01Z" finished-at="2020-04-14T17:55:06Z">
+      <class name="com.jira.tests.IssueAPIs.CreateIssue">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jira.tests.IssueAPIs.CreateIssue@101df177]" name="setUp" is-config="true" duration-ms="967" started-at="2020-04-14T23:25:01Z" finished-at="2020-04-14T23:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDeleteAttachmentTest()[pri:0, instance:com.jira.tests.AttachmentAPIs.DeleteAttachment@1188e820]" name="verifyDeleteAttachmentTest" duration-ms="2466" started-at="2020-04-14T19:36:46Z" finished-at="2020-04-14T19:36:49Z">
+        <test-method status="PASS" signature="verifyCreateIssueTest()[pri:0, instance:com.jira.tests.IssueAPIs.CreateIssue@101df177]" name="verifyCreateIssueTest" duration-ms="3813" started-at="2020-04-14T23:25:02Z" finished-at="2020-04-14T23:25:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeleteAttachmentTest -->
-      </class> <!-- com.jira.tests.AttachmentAPIs.DeleteAttachment -->
+        </test-method> <!-- verifyCreateIssueTest -->
+      </class> <!-- com.jira.tests.IssueAPIs.CreateIssue -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
