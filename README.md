@@ -13,11 +13,11 @@ Download link-https://www.atlassian.com/software/jira/free
 
 ## Features
 
-* Implemented Basic Auth and Cookie based authentication to authenticate the API Requests.
+* Implemented Basic Auth and Cookie based authentication for authentication of the API Requests.
 
-* Implemented RequestSpecBuilder and ResponseSpecBuilder passing/asserting common values across all API Requests.
+* Implemented RequestSpecBuilder and ResponseSpecBuilder for passing/asserting common values across all API Requests.
 
-* Implemented Serialization for contructing API Request Payload using POJO classes.
+* Implemented Serialization for constructing API Request Payload using POJO classes.
 
 
 ## Getting Started
