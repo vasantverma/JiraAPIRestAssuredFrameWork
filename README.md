@@ -11,6 +11,15 @@ Using Rest Assured java library I have automated some of the API endpoints.
 #### To test these API,you need to install Jira Software Server on your machine.
 Download link-https://www.atlassian.com/software/jira/free
 
+## Features
+
+* Implemented Basic Auth and Cookie based authentication to authenticate the API Requests.
+
+* Implemented RequestSpecBuilder and ResponseSpecBuilder passing/asserting common values across all API Requests.
+
+* Implemented Serialization for contructing API Request Payload using POJO classes.
+
+
 ## Getting Started
 
 Step 1 : Install Jira Software Server on your local machine.Its available for 30 days free trial.
