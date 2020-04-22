@@ -57,7 +57,6 @@ Step 10 : You can execute the testcases using the testng.xml file present under 
 ## Built With
 
 * TestNG - Unit Testing Framework
-* Page Object Model - Design Pattern
 * Maven - Build Automation and Dependency Management
 * Rest Assured - Java library for RESTful APIs automation
 * Extent Reports v4.1.3, Allure Report and Tesults Report - Reporting libraries
